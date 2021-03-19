@@ -13,7 +13,8 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 # --- Harden /etc/sysctl.conf
-sudo sysctl kernel.modules_disabled=1
+# nvidia and vbox kernel module are no signed so comment line below
+# sudo sysctl kernel.modules_disabled=1
 sudo sysctl -a
 sudo sysctl -A
 sudo sysctl mib
